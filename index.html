@@ -12,7 +12,7 @@
 
 <body>
 	<main>
-		<form class="form">
+		<form method="POST" action="https://dev.cotenfrontend.pl" class="form">
 			<!-- znacznik dla formularza, opakowanie dla tego typu treści-->
 			<p>
 				<label for="name">Imię:</label>
@@ -40,15 +40,15 @@
 
 			<p>Skąd dowiedziałeś się o tej stronie?</p>
 			<p>
-				<input type="checkbox" name="source" id="internet" value="">
+				<input type="checkbox" name="source" id="internet" value="internet">
 				<label for="internet">internet</label>
 			</p>
 			<p>
-				<input type="checkbox" name="source" id="friend" value="">
+				<input type="checkbox" name="source" id="friend" value="znajomi">
 				<label for="friend">znajomi</label>
 			</p>
 			<p>
-				<input type="checkbox" name="source" id="family" value="">
+				<input type="checkbox" name="source" id="family" value="rodzina">
 				<label for="family">rodzina</label>
 			</p>
 			<p>
@@ -88,6 +88,7 @@
 				<label for="textarea">Napisz coś od siebie:<br></label>
 				<textarea id="textarea" name="textarea" placeholder="tutaj pisz"></textarea>
 			</p>
+			<input type="submit" value="Wyślij to!">
 
 		</form>
 	</main>
